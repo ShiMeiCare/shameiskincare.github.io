@@ -121,7 +121,7 @@ a {
 }
 
 .hero_area .hero_container {
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/spacebanner.png);
   background-size: cover;
   height: 100%;
   display: -webkit-box;
@@ -286,12 +286,14 @@ a:focus {
 .slider_section .detail-box {
   color: #ffffff;
   padding: 35px;
+  text-transform: uppercase;
 }
 
 .slider_section .detail-box h1 {
   font-size: 4.5rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-align:center;
 }
 
 .slider_section .detail-box h1 span {
@@ -307,6 +309,7 @@ a:focus {
   transition: all .3s;
   border: 1px solid transparent;
   margin-top: 35px;
+  text-transform: uppercase;
 }
 
 .slider_section .detail-box a:hover {
@@ -405,6 +408,7 @@ a:focus {
   background-color: transparent;
   opacity: 1;
   border: none;
+   text-align: center;
 }
 
 .slider_section ol.carousel-indicators li.indicator-li-1 {
@@ -448,8 +452,9 @@ a:focus {
           justify-content: flex-start;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: center;
   margin-bottom: 15px;
+  
 }
 
 .service_section .service_container .box .img-box img {
@@ -458,6 +463,7 @@ a:focus {
 }
 
 .service_section .service_container .box .detail-box h4 {
+  text-transform: uppercase;
   text-transform: uppercase;
 }
 
@@ -470,12 +476,14 @@ a:focus {
   transition: all .3s;
   border: 1px solid transparent;
   margin-top: 15px;
+   text-align: center;
 }
 
 .service_section .service_container .box .detail-box a:hover {
   background-color: transparent;
   border-color: #393938;
   color: #393938;
+  text-align: center;
 }
 
 .about_section {
