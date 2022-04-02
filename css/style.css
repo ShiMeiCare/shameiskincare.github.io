@@ -293,7 +293,7 @@ a:focus {
   font-size: 4.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-align:center;
+  
 }
 
 .slider_section .detail-box h1 span {
@@ -422,6 +422,40 @@ a:focus {
 .service_section {
   font-family: 'Raleway', sans-serif;
 }
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+	 margin-left: auto; 
+  margin-right: auto;
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    min-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #FFE0CE;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
 
 .service_section .service_container {
   display: -webkit-box;
@@ -433,6 +467,12 @@ a:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.service_section .service_container_fat .box {
+  margin: 45px 15px 0 15px;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  min-width: 250px;
+}
 
 .service_section .service_container .box {
   margin: 45px 15px 0 15px;
@@ -440,6 +480,7 @@ a:focus {
       flex-basis: 30%;
   min-width: 250px;
 }
+
 
 .service_section .service_container .box .img-box {
   width: 125px;
@@ -455,20 +496,24 @@ a:focus {
           align-items: center;
   margin-bottom: 15px;
   
+  
 }
 
 .service_section .service_container .box .img-box img {
   max-width: 100%;
   max-height: 100%;
+  
 }
 
 .service_section .service_container .box .detail-box h4 {
   text-transform: uppercase;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .service_section .service_container .box .detail-box a {
-  display: inline-block;
+  display: flex;
+   justify-content: center;
   padding: 10px 40px;
   background-color: #393938;
   color: #ffffff;
@@ -476,7 +521,28 @@ a:focus {
   transition: all .3s;
   border: 1px solid transparent;
   margin-top: 15px;
+   align-items: center;
    text-align: center;
+}
+
+.service_section .service_container_fat .box .detail-box a {
+  display: flex;
+   justify-content: center;
+  padding: 10px 40px;
+  background-color: #393938;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid transparent;
+  margin-top: 15px;
+   align-items: center;
+   text-align: center;
+}
+.service_section .service_container_fat .box .detail-box a:hover {
+  background-color: transparent;
+  border-color: #393938;
+  color: #393938;
+  text-align: center;
 }
 
 .service_section .service_container .box .detail-box a:hover {
@@ -1064,6 +1130,10 @@ a:focus {
 
 .footer_section .social_container .social-box a {
   margin: 0 3px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .footer_section p {
